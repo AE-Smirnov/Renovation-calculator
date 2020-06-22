@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <title>Расчет количества плитки</title>
   <link rel="stylesheet" href="style.css">
+  <script src="form_wallpaper.js"></script>
  </head>
 <body bgcolor="#FAEBD7"> 
   <h1>Расчет необходимого количества плитки</h1> 
 <div class="wall_form">   
-  <form>
+   <form action="" onsubmit="FA(this.name);return false;" method="post" name="set_from" id="****" />
    <h3>Введите параметры плитки:</h3>
    <p>Введите ширину плитки: <input name="t_wid" autofocus required></p>
    <p>Введите длину плитки: <input name="t_hei" required></p>
@@ -26,6 +27,7 @@
    <p>Введите высоту двери: <input name="d_hei"></p>
    <p><input type="submit" value="Рассчитать"></p>
   </form>
+  <span id="paste"></span>
  </div>
  </body>
  <footer>

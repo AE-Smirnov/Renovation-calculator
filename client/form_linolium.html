@@ -4,19 +4,20 @@
   <meta charset="utf-8">
   <title>Расчет количества линолиума</title>
   <link rel="stylesheet" href="style.css">
+  <script src="form_wallpaper.js"></script>
  </head>
 <body bgcolor="#FAEBD7"> 
   <h1>Расчет необходимого количества линолиума</h1> 
 <div class="wall_form">   
-  <form>
+  <form action="" onsubmit="FA(this.name);return false;" method="post" name="set_from" id="****" />
    <h3>Введите параметры линолиума:</h3>
    <p>Введите ширину линолиумаа: <input name="t_wid" autofocus required></p>
-   <p>Введите длину линолиума: <input name="t_hei" required></p>
    <h3>Введите параметры помещения:</h3>
    <p>Введите длину комнаты: <input name="len" required></p>
    <p>Введите ширину комнаты: <input name="wid" required></p>
    <p><input type="submit" value="Рассчитать"></p>
   </form>
+  <span id="paste"></span>
  </div>
  </body>
  <footer>

@@ -2,13 +2,16 @@
  <html>
   <head>
   <meta charset="utf-8">
-  <title>Расчет количества обоев</title>
+  <title>
+        Расчет количества обоев
+  </title>
+  <script src="form_wallpaper.js"></script>
   <link rel="stylesheet" href="style.css">
  </head>
 <body bgcolor="#FAEBD7"> 
   <h1>Расчет необходимого количества обоев</h1> 
 <div class="wall_form">   
-  <form>
+  <form action="" onsubmit="FA(this.name);return false;" method="post" name="set_from" id="****" />
    <h3>Введите параметры помещения:</h3>
    <p>Введите длину комнаты: <input name="len" type="number" min="1" step="0.01" autofocus required></p>
    <p>Введите ширину комнаты: <input name="wid" type="number" min="1" step="0.01" required></p>
@@ -19,10 +22,11 @@
    <p>Введите высоту окна: <input name="w_hei" type="number" min="0" step="0.01"></p>
    <h3>Введите параметры дверей:</h3>
    <p>Введите количество дверей: <input name="num" type="number" min="1" step="0.01" value=1></p>
-   <p>Введите ширину двери: <input name="d_wid" type="number" min="1" step="0.01"></p>
-   <p>Введите высоту двери: <input name="d_hei" type="number" min="0.5" step="0.01"></p>
+   <p>Введите ширину двери: <input name="d_wid" type="number" min="0.4" step="0.01"></p>
+   <p>Введите высоту двери: <input name="d_hei" type="number" min="1" step="0.01"></p>
    <p><input type="submit" value="Рассчитать"></p>
   </form>
+  <span id="paste"></span>
  </div>
  </body>
  <footer>

@@ -2,6 +2,7 @@ function FA(){
    
    
     var len=document.set_from.elements.length-1;  //length-1, потому что кнопка считается за элемент и мы ее отбрасываем.
+    var form = document.form.set_from;
       var mas=[];  // создаем массив к торый собственно и будем заполнять
       var paste=document.getElementById('paste'); 
       for(var i=0;i<len;i++){
